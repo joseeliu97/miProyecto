@@ -31,7 +31,29 @@ namespace miProyecto
         {
             sbyte num1 = sbyte.Parse(txtnum1.Text);
             sbyte num2 = sbyte.Parse(txtnum2.Text);
-            lblrespuesta.Text = "respuesta: " + (num1 + num2);
+
+            int respuesta = 0;
+            if(optSuma.Checked){
+                respuesta = num1 + num2;
+
+            }
+            if (optResta.Checked)
+            {
+                respuesta = num1 - num2;
+
+            }
+            if (optDivicion.Checked)
+            {
+                respuesta = num1 / num2;
+
+            }
+            if (optMultiplicacion.Checked)
+            {
+                respuesta = num1 * num2;
+
+            }
+            lblrespuesta.Text = "respuesta: " + respuesta;
+
         }
     }
 }
