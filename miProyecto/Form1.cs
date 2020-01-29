@@ -31,7 +31,6 @@ namespace miProyecto
         {
             sbyte num1 = sbyte.Parse(txtnum1.Text);
             sbyte num2 = sbyte.Parse(txtnum2.Text);
-
             lblrespuesta.Text = "respuesta: " + (num1 + num2);
         }
     }
